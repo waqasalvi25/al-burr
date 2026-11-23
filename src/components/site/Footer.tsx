@@ -20,7 +20,7 @@ export function Footer() {
         </div>
         <div className="reveal" style={{ "--d": "100ms" } as CSSProperties}>
           <h3 className="mb-5 text-[13px] tracking-[0.24em] text-[#7D6A5C] uppercase">Explore</h3>
-          <ul className="space-y-3 font-serif text-[28px]">
+          <ul className="space-y-3 font-serif text-[20px]">
             {explore.map((item) => (
               <li key={item.href}>
                 <a href={item.href} className="transition-colors hover:text-gold">
