@@ -6,7 +6,7 @@ export function Eyebrow({ children, tone = "muted" }: { children: string; tone?:
   return (
     <div className="reveal">
       <div
-        className={`flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.28em] ${light ? "text-wheat" : "text-muted"}`}
+        className={`flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.28em] ${light ? "text-wheat" : "text-[#7D6A5C]"}`}
       >
         <span className={`h-px w-8 ${light ? "bg-wheat" : "bg-gold"}`} />
         {children}
@@ -55,7 +55,7 @@ export function PillLink({
   return (
     <a
       href={href}
-      className={`group inline-flex items-center gap-4 rounded-full border py-1.5 pr-1.5 pl-6 text-sm transition-colors ${pillVariants[variant]}`}
+      className={`group inline-flex items-center gap-4 rounded-full border py-1.5 pr-1.5 pl-6 text-[18px] transition-colors ${pillVariants[variant]}`}
     >
       {children}
       <span className="grid size-10 place-items-center rounded-full bg-gold text-white transition-transform duration-500 group-hover:rotate-[-45deg]">

@@ -17,13 +17,12 @@ export function Header() {
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "bg-cream/85 shadow-[0_1px_0_rgba(74,31,18,0.08)] backdrop-blur-md" : "bg-cream"}`}
     >
       <div
-        className={`mx-auto flex max-w-[1320px] items-center justify-between px-5 transition-all duration-500 md:px-10 ${scrolled ? "h-16" : "h-20"}`}
+        className={`mx-auto flex items-center justify-between px-5 transition-all duration-500 md:px-8 lg:px-10 ${scrolled ? "h-16" : "h-20"}`}
       >
-        <a href="#home" className="flex items-center gap-2" aria-label="AL BURR home">
-          <img alt="" className="h-10 w-auto mix-blend-multiply" src="/images/logo-mark.jpg" />
-          <img alt="AL BURR" className="h-6 w-auto mix-blend-multiply" src="/images/logo-word.jpg" />
+        <a href="#home" className="flex items-center" aria-label="AL BURR home">
+          <img alt="AL BURR" className="h-12 w-auto mix-blend-multiply md:h-14" src="/images/header-logo.png" />
         </a>
-        <nav className="hidden items-center gap-9 text-[13px] text-umber lg:flex">
+        <nav className="hidden items-center gap-9 text-[16px] text-umber lg:flex">
           {navLinks.map((item) => (
             <a key={item.href} href={item.href} className="group relative py-1">
               {item.label}
@@ -33,7 +32,7 @@ export function Header() {
         </nav>
         <a
           href="#contact"
-          className="hidden rounded-full bg-cocoa px-5 py-2.5 text-[12px] tracking-[0.16em] text-cream uppercase transition-colors hover:bg-gold lg:inline-block"
+          className="hidden rounded-full bg-cocoa px-5 py-2.5 text-[14px] tracking-[0.16em] text-cream uppercase transition-colors hover:bg-gold lg:inline-block"
         >
           Request a Quote
         </a>

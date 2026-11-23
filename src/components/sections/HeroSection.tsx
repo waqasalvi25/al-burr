@@ -3,25 +3,25 @@ import { PillLink } from "@/components/site/SectionHeading";
 
 export function HeroSection() {
   return (
-    <section id="home" className="px-3 pt-20 md:px-5">
-      <div className="relative h-[calc(100svh-6rem)] min-h-[580px] overflow-hidden rounded-[28px]">
+    <section id="home" className="px-3 pt-20 md:px-4 lg:px-5">
+      <div className="relative h-[min(72vh,760px)] min-h-[520px] overflow-hidden rounded-[28px]">
         <img
           alt="Golden wheat field at sunset"
           className="absolute inset-0 size-full animate-[kenburns_2.8s_cubic-bezier(0.22,1,0.36,1)_both] object-cover"
           src="/images/hero.jpg"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-cocoa/80 via-cocoa/20 to-transparent" />
-        <div className="relative flex h-full flex-col justify-end px-6 pb-10 text-white md:px-14 md:pb-14" data-reveal="true">
+        <div className="relative flex h-full flex-col justify-end px-5 pb-8 text-white md:px-6 md:pb-10 lg:px-8" data-reveal="true">
           <div className="reveal mb-6 flex flex-wrap gap-2" style={{ "--d": "200ms" } as CSSProperties}>
-            <span className="rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-[11px] tracking-[0.2em] uppercase backdrop-blur">
+            <span className="rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-[13px] tracking-[0.2em] uppercase backdrop-blur">
               Premium Grain Products
             </span>
-            <span className="rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-[11px] tracking-[0.2em] uppercase backdrop-blur">
+            <span className="rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-[13px] tracking-[0.2em] uppercase backdrop-blur">
               Pakistan
             </span>
           </div>
-          <div className="grid items-end gap-8 lg:grid-cols-[1fr_340px]">
-            <h1 className="font-serif text-[clamp(2.75rem,7.4vw,7rem)] leading-[0.92] font-normal tracking-[-0.02em]">
+          <div className="grid items-end gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+            <h1 className="font-serif text-[clamp(2.9rem,5vw,5.75rem)] leading-[0.96] font-normal tracking-[-0.02em]">
               <span className="line-mask">
                 <span style={{ "--d": "300ms" } as CSSProperties}>The goodness of wheat.</span>
               </span>
@@ -32,7 +32,7 @@ export function HeroSection() {
               </span>
             </h1>
             <div className="reveal space-y-6" style={{ "--d": "700ms" } as CSSProperties}>
-              <p className="text-[15px] leading-relaxed text-white/80">
+              <p className="text-[19.78px] leading-relaxed text-white/80">
                 Thoughtfully presented wheat flour and grain products for everyday tables, food businesses and industrial
                 customers.
               </p>
